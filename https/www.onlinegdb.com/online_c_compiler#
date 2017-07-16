@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<math.h>
+int main(void)
+{
+int x,y,vx,vy;
+double b;
+double mini;
+double d;
+scanf("%d %d %d %d",&x,&y,&vx,&vy);
+{
+if(x<0||y<0||vx<0||vy<0)
+printf("invalid input");
+else
+{
+d=sqrt((x*x)+(y*y));
+while((x>=0)||(y>=0))
+{
+    x=x-vx;
+    y=y-vy;
+    mini=sqrt((x*x)+(y*y));
+if(mini<d)
+{
+    b=mini;
+}
+if(b=0.0)
+printf("0.0");
+else
+printf("%0.11f",mini);
+}
+}
+}
+}
