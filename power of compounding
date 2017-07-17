@@ -1,0 +1,34 @@
+
+#include<stdio.h>
+
+int main() {
+    double p,r,t,a=0,i,s;
+    int j;
+    scanf("%lf %lf %lf",&p,&r,&t);
+  while(t>0)
+
+{
+
+a=a+p;
+
+i=(r*a)/1200;
+
+a=a+i;
+
+t--;
+}
+j=a;
+s=a-j;
+printf("%.11lf\n",s);
+if(s<0.5)
+{
+    printf("%d",j);
+    
+}
+else
+{
+    a=a+1-s;
+    printf("%.0lf",a);
+}
+return 0;
+}
