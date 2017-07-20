@@ -1,0 +1,10 @@
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+int m,n,sum;
+printf("enter the numbers");
+scanf("%d %d",&n,&m);
+sum=pow(n,m);
+printf("%d",&sum);
+}
