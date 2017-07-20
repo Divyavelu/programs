@@ -1,0 +1,95 @@
+
+Conversation opened. 5 messages. All messages read.
+
+Skip to content
+Using Gmail with screen readers
+Remove label
+ 
+ 
+More 
+16 of 40
+ 
+Fwd:
+codevita
+	x
+Supraja Muraliganesh <supraajacse@gmail.com>
+	
+AttachmentsJul 18 (2 days ago)
+	
+to aishusara52, Felsiya, Sureka, me
+---------- Forwarded message ----------
+From: Supraja Muraliganesh <supraajacse@gmail.com>
+Date: Mon, Jul 17, 2017 at 5:35 PM
+Subject: Fwd:
+To: Felsiya John <felsiyajohncse@gmail.com>
+
+
+
+---------- Forwarded message ----------
+From: Arul Merlin <arulmerlincse@gmail.com>
+Date: Fri, Jul 7, 2017 at 1:28 PM
+Subject:
+To: supraajacse@gmail.com
+Attachments area
+Sudha Poongodi
+	
+Jul 19 (1 day ago)
+	
+to me
+question iruntha anupu d ma
+Divya Chennai <divyachennai15@gmail.com>
+	
+Jul 19 (1 day ago)
+	
+to Sudha
+chlm illa d...therinja solren dr
+	
+Click here to Reply or Forward
+0.31 GB (2%) of 15 GB used
+Manage
+Terms - Privacy
+Last account activity: 41 minutes ago
+Details
+	
+	
+1 more
+	Supraja Muraliganesh
+supraajacse@gmail.com
+Show details
+
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+char arr[10000];
+int i,length,e=0,m=0,l=0;
+scanf("%s",arr);
+length=strlen(arr);
+if(arr[0]!='{' || arr[length-1]!='}')
+e++;
+for(i=1;i<length-1;i++)
+{
+if(arr[i]==':' && arr[i+1]=='[' && (m==0))
+{
+m++;
+}
+else if(arr[i]==']' && (m==1))
+m--;
+else if(arr[i]=='{' && (l==0))
+l++;
+else if(arr[i]=='}' && (l>0))
+l--;
+else if(arr[i]==',' && arr[i+1] == '{') continue;
+else if(arr[i] == '[') continue;
+else
+e++;
+}
+if(e!=0 || m!=0 || l!=0)
+printf("-1");
+else
+printf("1");
+return 0;
+}
+
+jsonsum.c
+Displaying jsonsum.c.
